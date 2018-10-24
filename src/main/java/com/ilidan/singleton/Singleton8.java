@@ -11,7 +11,7 @@ package com.ilidan.singleton;
 public class Singleton8 {
 
     private volatile static Singleton8 INSTANCE = null;
-    private static boolean initialized = false;
+    private volatile static boolean initialized = false;
 
     private Singleton8() {//当再次创造实例的时候抛出一个异常信息
         if (!initialized) {
