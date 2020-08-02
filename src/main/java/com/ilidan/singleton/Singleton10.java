@@ -27,7 +27,6 @@ public class Singleton10 implements Serializable {
     }
 
     /**
-     * @return
      * @Description:避免反序列化产生新的对象:
      * 通过反射初始化一个实例对象，初始化成功后，
      * 会再次判断实例化的对象中是否存在readResolve()
